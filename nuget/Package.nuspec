@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>Simit.Extension</id>
+    <id>Simit.Extensions</id>
     <version>1.0</version>
-    <authors>Umut Catal</authors>
+    <authors>Umut Çatal</authors>
     <owners>Minovex</owners>
     <projectUrl>https://github.com/minovex/simit-extensions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
