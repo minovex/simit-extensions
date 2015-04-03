@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Simit.Extension</id>
+    <version>1.0</version>
+    <authors>Umut Catal</authors>
+    <owners>Minovex</owners>
+    <projectUrl>https://github.com/minovex/simit-extensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simit Extension Library</description>
+    <tags>Simit,Extension,.Net</tags>
+  </metadata>
+</package>
