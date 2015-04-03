@@ -9,13 +9,12 @@
     #endregion Using Directives
 
     /// <summary>
-    /// http://hugoware.net/blog/enums-flags-and-csharp
+    ///
     /// </summary>
     public static class EnumExtensions
     {
         #region Publc Static Methods
 
-        //checks if the value contains the provided type
         /// <summary>
         /// Determines whether [has] [the specified type].
         /// </summary>
@@ -35,7 +34,6 @@
             }
         }
 
-        //checks if the value is only the provided type
         /// <summary>
         /// Determines whether [is] [the specified type].
         /// </summary>
@@ -55,7 +53,6 @@
             }
         }
 
-        //appends a value
         /// <summary>
         /// Adds the specified type.
         /// </summary>
@@ -74,13 +71,12 @@
             {
                 throw new ArgumentException(
                     string.Format(
-                        "Could not append value from enumerated type '{0}'.",
+                        "Can not append value from enumerated type '{0}'.",
                         typeof(T).Name
                         ), ex);
             }
         }
 
-        //completely removes the value
         /// <summary>
         /// Removes the specified type.
         /// </summary>
@@ -99,7 +95,7 @@
             {
                 throw new ArgumentException(
                     string.Format(
-                        "Could not remove value from enumerated type '{0}'.",
+                        "Can not remove value from enumerated type '{0}'.",
                         typeof(T).Name
                         ), ex);
             }
@@ -127,7 +123,7 @@
         public static Dictionary<int, string> EnumToDictionary(this Type type)
         {
             if (type == null) throw new NullReferenceException();
-            if (!type.IsEnum) throw new InvalidCastException("object is not an Enumeration");
+            if (!type.IsEnum) throw new InvalidCastException("object is not an Enumeration type");
 
             return Enum.GetValues(type).Cast<int>().ToDictionary(e => e, e => Enum.GetName(type, e));
         }
