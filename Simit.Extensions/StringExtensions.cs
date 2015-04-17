@@ -11,7 +11,7 @@
     #endregion Using Directives
 
     /// <summary>
-    ///
+    /// 
     /// </summary>
     public static class StringExtensions
     {
@@ -245,6 +245,22 @@
                 return DateTime.Now;
         }
 
+        /// <summary>
+        /// To the date time nullable.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <param name="cultureName">Name of the culture.</param>
+        /// <returns></returns>
+        public static DateTime? ToDateTimeNullable(this string value, string cultureName)
+        {
+            DateTime temp;
+            CultureInfo culture = new CultureInfo(cultureName);
+
+            if (DateTime.TryParse(value, culture.DateTimeFormat, DateTimeStyles.None, out temp))
+                return temp;
+            else
+                return null;
+        }
         /// <summary>
         /// To the seo text.
         /// </summary>
