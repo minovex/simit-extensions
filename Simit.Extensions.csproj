@@ -50,6 +50,15 @@
     <Compile Include="StringExtensions.cs" />
     <Compile Include="XMLExtensions.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="nuget\Package.nuspec" />
+    <None Include="nuget\Simit.Extensions.1.0.0.1.nupkg" />
+    <None Include="nuget\Simit.Extensions.1.0.0.2.nupkg" />
+    <None Include="nuget\Simit.Extensions.1.0.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nuget\lib\net40\Simit.Extensions.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
